@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { EventPage} from "../pages/event/event";
 import { EventProvider } from '../providers/event/event';
 
+import { HttpClientModule} from "@angular/common/http";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -15,6 +17,7 @@ import { EventProvider } from '../providers/event/event';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
