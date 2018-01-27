@@ -13,13 +13,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-event-detail',
   templateUrl: 'event-detail.html',
 })
+
 export class EventDetailPage {
+
+  event: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventDetailPage');
+    this.event = this.navParams.data.event;
   }
 
 }
